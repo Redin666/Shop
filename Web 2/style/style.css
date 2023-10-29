@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(rgb(10, 10, 10), rgb(25, 1, 31));
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    color: black;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid rgb(176, 176, 176) 2px;
+    padding: 10px 55px;
+}
+
+.header-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-panel > p {
+    font-size: 45px;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+}
+
+.header-links > a {
+    color: #000000;
+    font-size: 20px;
+    margin-left: 15px;
+    border: solid black 2px;
+    padding: 9px 15px;
+    border-radius: 5px;
+    
+}
+
+.header-links > a:hover {
+    background-color: black;
+    color: white;
+}
+
+.header-links > img {
+    width: 40px;
+    margin-left: 30px;
+}
+
+.info {
+    text-align: center;
+    margin: 250px 70px 0px 70px;
+}
+
+.info > h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.info > p {
+    font-size: 27px;
+}
+
+.photo {
+    text-align: center;
+    color: white;
+    margin: 100px 70px;
+}
+
+.photo > h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.photo-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0px;
+
+}
+
+.photo-img > img {
+    border: solid white 3px;
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+}
+
+.shop {
+    text-align: center;
+    margin: 70px 50px;
+}
+
+.shop > a {
+    text-decoration: none;
+    padding: 10px 35px;
+    border: solid white 3px;
+    background: none;
+    font-size: 25px;
+    border-radius: 8px;
+    color: white;
+    margin-right: 30px;
+}
+
+.shop > a:hover {
+    color: black;
+    background: white;
+}
+
+.shop > h1 {
+    font-size: 60px;
+}
+
+.shop-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.baket-buy {
+    background: rgb(54, 19, 81);
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.counter-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+}
+
+.reset-button {
+    background: rgb(54, 19, 81);
+    height: 30px;
+    width: 50px;
+    position: absolute;
+    right: -15px;
+    top: 35px;
+    font-size: 8px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.reset-button:hover {
+    color: #000000;
+    background: white;
+}
+
+.shop-buy {
+    color: #000000;
+    background-color: #ffffff;
+    width: 300px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 15px 0px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.add-button,.subtract-button {
+    padding: 6px 25px;
+    color: white;
+    background: #1c022e;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.add-button:hover,.subtract-button:hover {
+    background-color: #ffffff;
+    border: solid 3px black;
+    color: #000000;
+}
+
+footer > form {
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+form > label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+form > input[type="text"],
+form > input[type="email"],
+form > textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+form > input[type="submit"] {
+    background: none;
+    border: solid 2px white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+form > input[type="submit"]:hover {
+    background-color: #ffffff;
+    border: solid 2px #1c022e;
+    color: #1c022e;
+}
+
+textarea#comment-textarea {
+    resize: vertical;
+    width: 600px;
+    height: 100px; /* Высота по умолчанию */
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+  
+.comment {
+    max-width: 50%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+
+
+footer > h1 {
+    margin: 30px 0px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 26px;
+    color: rgb(54, 19, 81);
+}
+  
+.email {
+    color: #000000;
+}
+  
+.comment-text {
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 18px;
+    color: #000000;
+}
+
+.comment-text > span {
+    margin-top: 5px;
+    font-style: italic;
+    color: rgb(54, 19, 81);
+    font-weight: bold;
+}
+  
+.timestamp {
+    font-size: 12px;
+    color: #3a3a3a;
+    margin-bottom: 20px;
+}
+
+.comment > img {
+    max-width: 20%;
+    border-radius: 50%;
+}
+
+.edit-button,
+.delete-button {
+    background-color: #1c022e;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #ffffff;
+    border: solid 2px #1c022e;
+    color: #1c022e;
+}
+
+.actions {
+    margin-bottom: 15px;
+}
+
